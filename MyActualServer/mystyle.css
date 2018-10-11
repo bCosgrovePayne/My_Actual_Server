@@ -1,0 +1,67 @@
+
+#instruct{
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media only screen and (min-width: 769px){
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    text-align:left;
+}
+
+#ui {
+    float:right;
+    text-align:right;
+    padding: 8px;
+    margin:auto;
+    width:40%;
+    position:relative;
+    right:10%
+}
+
+input {
+    margin: 8px;
+}
+
+#instruct {
+    margin:20px;
+}
+table{
+    margin:auto;
+}
+}
+
+@media only screen and (max-width: 768px)
+{
+    #ui{
+        margin:auto;
+        text-align:center;
+        padding:10px;
+    }
+    table {
+        width:100%;
+    }
+    input {
+        margin: 8px;
+    }
+    button {
+        margin: 8px;
+    }
+} 
+
+
+
+

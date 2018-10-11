@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="refresh" content="30"/>
+    <title>Data Management Application</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css"></link>
+</head>
+<body>
+    <div id="instruct">
+        To add a person, make sure Add is selected, input a first name, last name, and age, then click submit.
+        To modify or delete a person, click on the row of the person you wish to modify or delete.
+        When modifying, make sure modify is selected, make the changes you wish in the text boxes, and click submit.
+        When deleting, select delete, ensure you selected the correct entry, and click submit.
+    </div>
+    <div>
+        <div id="ui">
+            Index: <input type="text" name="index" id="4" disabled><br>
+            First name: <input type="text" name="fname" id="1"><br>
+            Last name: <input type="text" name="lname" id="2"><br>
+            Age: <input type="text" name="age" id="3"><br>
+            Add: <input type="radio" name="mode" value="add" id="add" checked><br>
+            Modify: <input type="radio" name="mode" value="modify" id="modify" disabled><br>
+            Delete: <input type="radio" name="mode" value="delete" id="delete" disabled><br>
+            <button id="submit">Submit</button>
+        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            {0}
+        </table>
+    </div>            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./JavaScript.js"></script>
+</body>
+</html>
